@@ -1,54 +1,48 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Foundation Intro</title>
-	<link rel="stylesheet" href="css/foundation.css">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-
-<body>
-    <div class="off-canvas-wrapper">
-        <!-- Your menu or Off-canvas content goes here -->
-        <div class="off-canvas position-left" id="offCanvas" data-off-canvas>
-            <!-- Close button -->
-            <button class="close-button" aria-label="Close menu" type="button" data-close>
-                <span aria-hidden="true">&times;</span>
-            </button>
-
-            <!-- Menu -->
-            <ul class="vertical menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="fun.html">Fun</a></li>
-            </ul>
-        </div>
-        <!-- Your page content lives here -->
-        <div class="off-canvas-content" data-off-canvas-content>
-            <!-- main content within a `grid-container` -->
-            <div class="grid-container">
-                <!-- `grid-x` represents a row -->
-                <div class="grid-x grid-padding-x">
-                    <div class="cell small-6 large-4" style="background-color: #ADD8E6;">Small 6 / Large 4</div>
-                    <div class="cell small-6 large-8" style="background-color: #90EE90;">Small 6 / Large 8</div>
-                </div>
-                
-                <div class="grid-x grid-padding-x">
-                    <div class="cell large-auto" style="background-color: #ADD8E6;">One</div>
-                    <div class="cell large-auto" style="background-color: #90EE90;">Two</div>
-                    <div class="cell large-auto" style="background-color: #ADD8E6;">Three</div>
-                    <div class="cell large-auto" style="background-color: #90EE90;">Four</div>
-                    <div class="cell large-auto" style="background-color: #ADD8E6;">Five</div>
-                </div>
-                
-                <div class="grid-x grid-padding-x">
-                    <button type="button" class="cell large-auto button" data-toggle="offCanvas">Open Menu</button>
-                </div>
+    <head>
+	    <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <title>Anthony Shishkin</title>
+	    <link rel="stylesheet" href="css/foundation.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="off-canvas-wrapper">
+            <div class="off-canvas position-left" id="offCanvas" data-off-canvas data-transition="overlap">
+                <button class="close-button" aria-label="Close menu" type="button" data-close>
+                    <span aria-hidden="true">&times;</span>
+                </button>
+    
+                <!-- Menu -->
+                <ul class="vertical menu">
+                    <li><a href="index.html" style="color: #000608;">Home</a></li>
+                    <li><a href="projects.html" style="color: #000608;">Projects</a></li>
+                    <li><a href="resume.html" style="color: #000608;">Resume</a></li>
+                    <li><a href="fun.html" style="color: #000608;">Fun</a></li>
+                </ul>
             </div>
+
+                <div class="grid-x grid-padding-x topnav">
+                    <a class="cell small-3" href="index.html">Home</a>
+                    <a class="cell small-3" href="projects.html">Projects</a>
+                    <a class="active small-3" href="resume.html">Resume</a>
+                    <a class="cell small-3" href="fun.html">Fun</a>
+                  </div>
+
+            <div>
+                <div class="boldtext" style="color: black; font-size: 5rem; text-align: center;">Resume</div>
+            </div>
+            <hr>
+            <div style="text-align: center;">
+                <object data="AnthonyShishkinResume.pdf" style="margin-left: auto; margin-right: auto;" type="application/pdf" width="75%" height="450rem";></object>
+            </div>
+
+          
+
         </div>
-    </div>
+     
+
 
     <!-- include before closing <body> tag -->
     <script src="js/vendor/jquery.js"></script>
